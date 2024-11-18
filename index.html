@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip-calculator</title>
+    <link rel="stylesheet" href="sass/main.css">
+    <script src="https://kit.fontawesome.com/ad5b6e87a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <div class="tip-container">
+            <h1>Tip Calculator</h1>
+            <br /><label for="Bill">Bill Amount</label><br />
+            <button class="side-label"><i class="fa-solid fa-dollar-sign"></i></button>
+            <input type="text" name="bill" id="bill" required><br />
+            <br /><label for="guest">Number of Guest</label><br />
+            <button class="side-label"><i class="fa-solid fa-person"></i></button>
+            <input type="text" name="guest" id="guest" required><br />
+            <br /><label for="quality">Service Quality</label><br />
+            <button class="side-label"><i class="fa-solid fa-dollar-sign"></i></button>
+            <select name="quality" id="quality" required>
+                <option disabled selected>Select</option>
+                <option value=0.25>Exceptional</option>
+                <option value=0.2>Better</option>
+                <option value=0.15>Good</option>
+                <option value=0.1>Bad</option>
+                <option value=0.05>Terrible</option>
+            </select>
+            <div class="result">
+                <button id="calculate">Calculate</button>
+            </div>
+
+        </div>
+        <span id="tip"></span>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
